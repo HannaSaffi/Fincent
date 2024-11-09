@@ -18,11 +18,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: fincent-1  # Replace 'your_database_name' with the actual DB name
-      POSTGRES_USER: "hannasaffi"  # Replace 'your_database_user' with your DB username
-      POSTGRES_PASSWORD: "Owenisoliver18!"  # Replace 'your_database_password' with your DB password
+      POSTGRES_DB: fincent-1  
+      POSTGRES_USER: "hannasaffi"  
+      POSTGRES_PASSWORD: "Owenisoliver18!"  
     ports:
-      - "5432:5432"  # Ensure this line is present to expose the port
+      - "5432:5432"  
 
 volumes:
   postgres_data:
