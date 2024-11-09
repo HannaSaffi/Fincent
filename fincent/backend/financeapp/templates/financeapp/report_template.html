@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ symbol }} Backtest Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { text-align: center; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; padding: 8px; }
+        .section { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Backtest Report for {{ symbol }}</h1>
+    </div>
+    <div class="section">
+        <h3>Summary</h3>
+        <p>Final Portfolio Value: {{ final_value }}</p>
+        <p>Total Return: {{ total_return }}%</p>
+        <p>Max Drawdown: {{ max_drawdown }}%</p>
+        <p>Number of Trades: {{ num_trades }}</p>
+    </div>
+    <div class="section">
+        <h3>Trade Details</h3>
+        <table>
+            <tr>
+                <th>Action</th>
+                <th>Date</th>
+                <th>Price</th>
+                <th>Shares</th>
+            </tr>
+            {% for trade in trades %}
+            <tr>
+                <td>{{ trade.action }}</td>
+                <td>{{ trade.date }}</td>
+                <td>{{ trade.price }}</td>
+                <td>{{ trade.shares }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
