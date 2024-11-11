@@ -1,6 +1,6 @@
-# Backend Engineer Trial Task
+# Fincent
 
-Welcome to the repository for the Backend Engineer Trial Task! This project is designed to demonstrate the integration of API data fetching, storage, backtesting modules, machine learning predictions, and deployment in a Django-based environment. The repository showcases advanced skills in Django development, database management, and deployment.
+Welcome to the repository for Fincent! This project is designed to demonstrate the integration of API data fetching, storage, backtesting modules, machine learning predictions, and deployment in a Django-based environment. The repository showcases advanced skills in Django development, database management, and deployment.
 
 ## 🚀 Overview
 
